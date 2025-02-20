@@ -87,6 +87,12 @@ ol {
     gap: 32px;
 }
 
+.text-content > hr {
+    border: none;
+    background-color: var(--stone-150);
+    block-size: 1px;
+}
+
 .title-content__title {
     color: var(--stone-900);
 }
