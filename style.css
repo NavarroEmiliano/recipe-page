@@ -172,9 +172,6 @@ ol {
     color: var(--brown-800);
 }
 
-.instructions-content {
-    padding-block-start: 32px;
-}
 
 .instructions-content__title {
     color: var(--brown-800);
