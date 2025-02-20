@@ -47,6 +47,7 @@ ol {
     font-size: 28px;
     line-height: 1;
     letter-spacing: 0px;
+    font-weight: 400;
 }
 
 .text-preset3-semibold {
@@ -105,13 +106,103 @@ ol {
     color: var(--stone-600);
 }
 
-.preparation-content__list li::marker {
-    color: var(--rose-800)
+.preparation-content__list::marker {
+    color: var(--rose-800);
+    text-align: center;
 }
 
 .preparation-content__list span {
     font-weight: 700;
     color: var(--rose-800);
+}
+
+.ingredients-content__title {
+ color: var(--brown-800);
+}
+
+.ingredients-content__list {
+    padding-top: 24px;
+    display: grid;
+    gap: 8px;
+    color: var(--stone-600);
+    padding-inline-start: 8px;
+}
+
+.ingredients-content__list div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ingredients-content__list div::before {
+    content: "\2022";
+    font-size: 2rem;
+    color: var(--brown-800);
+}
+
+.instructions-content {
+    padding-block-start: 32px;
+}
+
+.instructions-content__title {
+    color: var(--brown-800);
+}
+
+.instructions-content__list {
+    color: var(--stone-600);
+    padding-block-start: 24px;
+    display: grid;
+    gap: 8px;
+}
+
+.instructions-content__list li::marker {
+    color: var(--brown-800);
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.instructions-content__list .li-box {
+    display: flex;
+    gap: 16px;
+    padding-inline-start: 8px;
+}
+
+.instructions-content__list span {
+    font-weight: 700;
+}
+
+.nutrition-content {
+    display: grid;
+    gap: 24px;
+}
+
+.nutrition-content__title {
+    color: var(--brown-800);
+}
+
+.nutrition-content__description {
+    color: var(--stone-600);
+}
+
+.nutrition-content__table {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 32px;
+    gap: 24px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.table-row__nutrient {
+    color: var(--stone-600);
+}
+
+.table-row__weight {
+    color: var(--brown-800);
+    font-weight: 700;
 }
 
 @media (width > 48rem) {
