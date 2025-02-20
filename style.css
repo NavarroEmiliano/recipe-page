@@ -9,15 +9,6 @@
     --rose-50: #FFF1F2;
 }
 
-@font-face {
-    font-family: "Young Serif";
-    src: url(assets/fonts/young-serif/YoungSerif-Regular.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.woff2) format('woff2');
-}
 
 * {
     margin: 0;
@@ -37,9 +28,53 @@ img {
     block-size: auto;
 }
 
+ul,
+ol {
+    list-style-position: inside;
+    padding-left: 0
+}
+
+.text-preset1-regular {
+    font-family: "Young Serif", serif;
+    font-size: clamp(36px, 30px + 1.5vw, 40px);
+    line-height: 1;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+.text-preset2-regular {
+    font-family: "Young Serif", serif;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 0px;
+}
+
+.text-preset3-semibold {
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+
+.text-preset4-regular {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.text-preset4-bold {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
 .main-container {
     background-color: var(--white);
-    inline-size: clamp(320px, 320px + 10vw, 736px);
+    inline-size: clamp(320px, 100%, 736px);
 }
 
 .text-content {
@@ -50,11 +85,33 @@ img {
     gap: 32px;
 }
 
-.title-content__title {
-    font-family: "Young Serif", serif;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: 0px;
+.title-content .title-content__description {
+    padding-top: 24px;
+    color: var(--stone-600);
+}
+
+.preparation-content {
+    padding: 24px;
+}
+
+.preparation-content__title {
+    color: var(--rose-800);
+}
+
+.preparation-content__list {
+    display: grid;
+    gap: 8px;
+    padding-top: 16px;
+    color: var(--stone-600);
+}
+
+.preparation-content__list li::marker {
+    color: var(--rose-800)
+}
+
+.preparation-content__list span {
+    font-weight: 700;
+    color: var(--rose-800);
 }
 
 @media (width > 48rem) {
