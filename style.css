@@ -109,6 +109,7 @@ ol {
 }
 
 .preparation-content__title {
+    padding-inline-start: 8px;
     color: var(--rose-800);
 }
 
