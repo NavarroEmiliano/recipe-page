@@ -31,7 +31,7 @@ img {
 ul,
 ol {
     list-style-position: inside;
-    padding-left: 0
+    padding-left: 0;
 }
 
 .text-preset1-regular {
@@ -113,11 +113,15 @@ ol {
 .preparation-content__list {
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
+    padding-block: 16px;
     color: var(--stone-600);
     gap: 8px;
     padding-inline-start: 8px;
     background-color: var(--rose-50);
+}
+
+.preparation-content__list li::marker{
+    margin-left: 20px;
 }
 
 .preparation-content__list > div {
@@ -181,12 +185,20 @@ ol {
     padding-block-start: 24px;
     display: grid;
     gap: 8px;
+    padding-inline-start: 48px;
 }
 
+.instructions-content__list li {
+    text-indent: -38px;
+}
+
+.instructions-content__list li strong {
+    padding-inline-start: 16px;
+}
 .instructions-content__list li::marker {
     color: var(--brown-800);
     font-weight: 700;
-    padding-left: 20px;
+
 }
 
 .instructions-content__list .li-box {
