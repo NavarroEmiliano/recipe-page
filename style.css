@@ -104,6 +104,8 @@ ol {
 
 .preparation-content {
     padding: 24px;
+    background-color: var(--rose-50);
+
 }
 
 .preparation-content__title {
@@ -117,7 +119,6 @@ ol {
     color: var(--stone-600);
     gap: 8px;
     padding-inline-start: 8px;
-    background-color: var(--rose-50);
 }
 
 .preparation-content__list li::marker{
