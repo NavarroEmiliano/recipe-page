@@ -110,6 +110,8 @@ ol {
     padding-top: 16px;
     color: var(--stone-600);
     gap: 8px;
+    padding-inline-start: 8px;
+    background-color: var(--rose-50);
 }
 
 .preparation-content__list > div {
@@ -147,12 +149,16 @@ ol {
 .ingredients-content__list div {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 26px;
+    min-block-size: 24px;
 }
 
 .ingredients-content__list div::before {
     content: "\2022";
     font-size: 2rem;
+    block-size: 24px;
+    display: flex;
+    align-items: center;
     color: var(--brown-800);
 }
 
