@@ -1,12 +1,12 @@
 :root {
     --white: #FFFFFF;
-    --stone-100: #F4EDE4;
-    --stone-150: #E8E2DC;
-    --stone-600: #59524A;
-    --stone-900: #2E2926;
-    --brown-800: #8B3E2F;
-    --rose-800: #872742;
-    --rose-50: #FFF1F2;
+    --stone-100: #F3E5D7;
+    --stone-150: #E3DDD7;
+    --stone-600: #5F564D;
+    --stone-900: #312E2C;
+    --brown-800: #854632;
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
 }
 
 
@@ -87,7 +87,11 @@ ol {
     gap: 32px;
 }
 
-.title-content .title-content__description {
+.title-content__title {
+    color: var(--stone-900);
+}
+
+.title-content__description {
     padding-top: 24px;
     color: var(--stone-600);
 }
@@ -118,7 +122,7 @@ ol {
 }
 
 .ingredients-content__title {
- color: var(--brown-800);
+    color: var(--brown-800);
 }
 
 .ingredients-content__list {
@@ -188,13 +192,20 @@ ol {
 .nutrition-content__table {
     display: flex;
     flex-direction: column;
-    padding-inline: 32px;
-    gap: 24px;
 }
+
+.nutrition-content__table hr {
+    background-color: var(--stone-150);
+    border: none;
+    block-size: 1px;
+    margin-block: 12px;
+}
+
 
 .table-row {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 32px;
 }
 
 .table-row__nutrient {
@@ -225,7 +236,7 @@ ol {
     }
 }
 
-@media (width > 90rem) {
+@media (width > 79rem) {
     .main-container {
         max-inline-size: 736px;
     }
