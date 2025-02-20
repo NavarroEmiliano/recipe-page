@@ -75,7 +75,8 @@ ol {
 
 .main-container {
     background-color: var(--white);
-    inline-size: clamp(320px, 100%, 736px);
+    max-inline-size: 616px;
+    inline-size: 100%;
 }
 
 .text-content {
@@ -206,7 +207,26 @@ ol {
 }
 
 @media (width > 48rem) {
+    body {
+        padding-block: 128px;
+    }
+
     .main-container {
         padding: 40px;
+        border-radius: 24px;
+    }
+
+    .top-img {
+        border-radius: 12px;
+    }
+
+    .text-content {
+        padding-inline: 0px;
+    }
+}
+
+@media (width > 90rem) {
+    .main-container {
+        max-inline-size: 736px;
     }
 }
